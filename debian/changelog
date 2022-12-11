@@ -1,0 +1,5 @@
+python-rapidfuzz (100:2.13.5-1) UNRELEASED; urgency=medium
+
+  * https://github.com/maxbachmann/rapidfuzz/releases/tag/v2.13.5
+
+ -- Wong Hoi Sing Edison <hswong3i@pantarei-design.com>  Sun, 11 Dec 2022 12:38:49 +0800

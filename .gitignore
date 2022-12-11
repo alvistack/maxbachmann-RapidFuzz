@@ -24,5 +24,4 @@ bench_results/
 # Hypothesis results
 .hypothesis/
 
-# Cython generated files
-*.cxx
+.pybuild/
