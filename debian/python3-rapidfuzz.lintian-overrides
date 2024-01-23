@@ -1,0 +1,4 @@
+python3-rapidfuzz: copyright-without-copyright-notice
+python3-rapidfuzz: initial-upload-closes-no-bugs
+python3-rapidfuzz: no-manual-page
+python3-rapidfuzz: zero-byte-file-in-doc-directory
