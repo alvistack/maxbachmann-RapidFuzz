@@ -1,0 +1,26 @@
+#!/usr/bin/make -f
+
+SHELL := /bin/bash
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DRAPIDFUZZ_BUILD_BENCHMARKS="OFF" \
+		-DRAPIDFUZZ_BUILD_TESTING="OFF"
+
+override_dh_auto_build:
+	dh_auto_build --buildsystem=pybuild
+	dh_auto_build
+
+override_dh_auto_install:
+	dh_auto_install --buildsystem=pybuild --destdir=debian/tmp
+	dh_auto_install --destdir=debian/tmp
+	find debian/tmp/usr/lib/python*/*-packages -type f -name '*.pyc' -exec rm -rf {} \;
+	fdupes -qnrps debian/tmp/usr/lib/python*/*-packages
+
+override_dh_auto_test:
+
+override_dh_auto_clean:
+
+%:
+	dh $@ --buildsystem=cmake --with python3
