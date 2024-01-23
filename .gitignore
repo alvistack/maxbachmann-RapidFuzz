@@ -30,3 +30,5 @@ bench_results/
 
 # temp files from benchmarks
 bench/temp/
+
+.pybuild/
