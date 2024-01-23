@@ -30,3 +30,7 @@ bench_results/
 
 # temp files from benchmarks
 bench/temp/
+
+.pybuild/
+obj-x86_64-linux-gnu/
+*.egg-info/
