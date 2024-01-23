@@ -1,0 +1,5 @@
+python-rapidfuzz source: file-without-copyright-information
+python-rapidfuzz source: no-debian-changes
+python-rapidfuzz source: source-contains-prebuilt-windows-binary
+python-rapidfuzz source: source-is-missing
+python-rapidfuzz source: source-package-encodes-python-version
